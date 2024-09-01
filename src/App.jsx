@@ -1,14 +1,18 @@
+import { lazy, Suspense } from "react"
+const Hero = lazy(() => import("@/components/Hero"))
+const Highlights = lazy(() => import("@/components/Highlights"))
+const PageLoader = lazy(() => import("@/components/PageLoader"))
 import Navbar from "@/components/Navbar"
-import Hero from "@/components/Hero"
-import Highlights from "@/components/Highlights"
 
 const App = () => {
   return (
-    <main className="bg-black">
-      <Navbar />
-      <Hero />
-      <Highlights />
-    </main>
+    <Suspense fallback={<PageLoader />}>
+      <main className="bg-black">
+        <Navbar />
+        <Hero />
+        <Highlights />
+      </main>
+    </Suspense>
   )
 }
 

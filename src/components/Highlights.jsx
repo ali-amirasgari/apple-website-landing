@@ -2,6 +2,7 @@ import { watchImg, rightImg } from "@/utils"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/all"
+import VideoCarousel from "./VideoCarousel"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -52,6 +53,8 @@ const Highlights = () => {
                         </p>
                     </div>
                 </div>
+
+                <VideoCarousel />
             </div>
         </section>
     )
