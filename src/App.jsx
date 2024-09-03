@@ -2,7 +2,9 @@ import { lazy, Suspense } from "react"
 const Hero = lazy(() => import("@/components/Hero"))
 const Highlights = lazy(() => import("@/components/Highlights"))
 const PageLoader = lazy(() => import("@/components/PageLoader"))
+const Model = lazy(() => import("@/components/Model"))
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
         <Navbar />
         <Hero />
         <Highlights />
+        <Model />
+        <Footer />
       </main>
     </Suspense>
   )
