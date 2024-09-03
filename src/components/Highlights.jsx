@@ -23,13 +23,12 @@ const Highlights = () => {
             scrollTrigger: {
                 trigger: '.link',
                 start: "bottom bottom",
-                end: "top top",
+                end: "bottom top",
                 scrub: true
             },
             opacity: 1,
             y: 0,
             duration: 1,
-            stagger: 0.25
         })
     }, [])
 
