@@ -5,6 +5,8 @@ const PageLoader = lazy(() => import("@/components/PageLoader"))
 const Model = lazy(() => import("@/components/Model"))
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import Features from "@/components/Features"
+import HowItWorks from "@/components/HowItWorks"
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <Hero />
         <Highlights />
         <Model />
+        <Features />
+        <HowItWorks />
         <Footer />
       </main>
     </Suspense>
